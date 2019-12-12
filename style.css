@@ -1,17 +1,13 @@
-#time {
-    
-    font-size: 36px;
-}
-
-.container {
-    border: 2px solid rosybrown;
-}
-
-#dayPlanner {
-    font-size: 36px;
+.jumbotron{
+    background-color: white;
     text-align: center;
 }
 
-h1{
-    text-align: center;
+p{
+    font-size: 25px;
+}
+
+.table{
+    max-width: 980px;
+    margin: auto;
 }
