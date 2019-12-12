@@ -3,6 +3,9 @@
     text-align: center;
 }
 
+#exact-time{
+    font-size: 25px;
+}
 p{
     font-size: 25px;
 }
@@ -34,4 +37,15 @@ td{
 .save-button:hover{
     cursor: pointer;
     color: red;
+}
+
+.user-input{
+    background-color: inherit;
+    width: 100%;
+}
+
+@media screen and (max-width:480px){
+    .info-col{
+        width: 60%;
+    }
 }
