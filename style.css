@@ -11,3 +11,27 @@ p{
     max-width: 980px;
     margin: auto;
 }
+
+
+td{
+    color: #00A099;
+}
+
+.time-col{
+    width: 100px;
+    text-align:center;
+}
+
+.info-col{
+    text-align: center;
+}
+
+.save-col{
+    text-align: center;
+    width: 100px;
+}
+
+.save-button:hover{
+    cursor: pointer;
+    color: red;
+}
