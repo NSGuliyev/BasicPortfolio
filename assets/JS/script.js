@@ -4,16 +4,12 @@ $(document).ready(function (){
     var saveButton = $(".save-button");
     var data;
 
-    console.log("The current hour is " + moment().hour());
-
     $("#exact-time").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
-    // changeColor();
-
-
-
+    changeColor();
 
     setInterval(function () {
         $("#exact-time").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+        changeColor();
     }, 1000);
 
 
@@ -21,30 +17,35 @@ $(document).ready(function (){
         $('#' + 1).val(localStorage.getItem("hour " + 1 ));
     }
 
-
     saveButton.click(function () {
         event.preventDefault();
-        console.log("I've been clicked");
-
 
         var a = this;
         var results = a.previousElementSibling.firstElementChild;
-        console.log($(results));
 
         data = $(results).val().trim();
-        console.log(data);
 
         var time = results.id;
-        console.log("hour " + time);
 
         localStorage.setItem("hour " + time,data);
 
     });
 
-    
 
+// Changing color depending on hour of the day
 
+    function changeColor() {
+        for (i = 9 ; i <= 17; i++) {
 
+            var currentTime = moment().hour();
 
+            if (currentTime === i) {
+                $("." + i).attr("style", "background-color: red");
+            }
 
-})
+            else if (currentTime > i) {
+                $("." + i).attr("style", "background-color: #00A099");
+            }
+        }  
+    }
+});
