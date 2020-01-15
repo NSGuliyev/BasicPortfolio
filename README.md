@@ -1,1 +1,1 @@
-https://nsguliyev.github.io/Day-Planner/.
+[Click here](https://nsguliyev.github.io/Day-Planner/.)
